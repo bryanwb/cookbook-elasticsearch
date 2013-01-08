@@ -28,7 +28,7 @@ bash "remove the elasticsearch user home" do
 end
 
 ark "elasticsearch" do
-  url "https://github.com/downloads/elasticsearch/elasticsearch/#{elasticsearch}.tar.gz"
+  url "http://download.elasticsearch.org/elasticsearch/elasticsearch/#{elasticsearch}.tar.gz"
   owner node.elasticsearch[:user]
   group node.elasticsearch[:user]
   version node.elasticsearch[:version]
