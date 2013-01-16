@@ -33,7 +33,7 @@ default.elasticsearch[:max_mem] = max_mem
 # === LIMITS ===
 #
 default.elasticsearch[:limits]  = {}
-default.elasticsearch[:limits][:memlock] = 'unlimited'
+default.elasticsearch[:limits][:memlock] = '100000'
 default.elasticsearch[:limits][:nofile]  = '64000'
 
 # === SETTINGS ===
